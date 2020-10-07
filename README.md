@@ -11,9 +11,10 @@ Here is the IAM policy which is required to run this lambda code :
 - Along with default role where CW log access is given, you have to edit the role to have AmazonEC2FullAccess.
 
 Here are the Env Variable that you will have to define while deploying this Lambda code :
-ActiveVPN --> Specicy Primary VPN Connection ID
-StandbyVPN --> Specify Backup VPN Connection ID
-TransitGatewayID --> Specify TGW ID where you have associated both VPN ID.
+
+- ActiveVPN --> Specicy Primary VPN Connection ID
+- StandbyVPN --> Specify Backup VPN Connection ID
+- TransitGatewayID --> Specify TGW ID where you have associated both VPN ID.
 
 Note : Please ensure that both VPN Connection are part of the same TGW RTB for failover to happen seamlessly.
 
