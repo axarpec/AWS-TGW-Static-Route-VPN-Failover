@@ -19,3 +19,7 @@ Note : Please ensure that both VPN Connection are part of the same TGW RTB for f
 
 Triger for Lambda :
 - You can have CloudWatch event to run it every 5 min or 1 min.
+
+You can use the code from the file TGW-Static-Route-VPN-Failover.py
+
+Stay tuned for future developemt on same project.
