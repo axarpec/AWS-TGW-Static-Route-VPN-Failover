@@ -62,7 +62,7 @@ def lambda_handler(event, context):
     TGWRouteTableId = response_primary_vpn['TransitGatewayAttachments'][0]['Association']['TransitGatewayRouteTableId']
 
     if response_primary_vpn['TransitGatewayAttachments'][0]['Association']['TransitGatewayRouteTableId'] != \
-            response_primary_vpn['TransitGatewayAttachments'][0]['Association']['TransitGatewayRouteTableId']:
+            response_secondary_vpn['TransitGatewayAttachments'][0]['Association']['TransitGatewayRouteTableId']:
         print('Both VPN ' + ActiveVPN + ' ' + StandbyVPN + ' are not associated to same TGW RTB')
         sys.exit('Exiting code. Please associate both VPN to the same TGW RTB')
 
